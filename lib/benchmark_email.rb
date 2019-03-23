@@ -4,7 +4,7 @@ require "benchmark_email/version"
 
 module BenchmarkEmail
   class Error < StandardError; end
-  # Your code goes here...
+  class EmptyTokenError < StandardError; end
 
   class Client
     API_URL = 'https://clientapi.benchmarkemail.com'
@@ -12,6 +12,7 @@ module BenchmarkEmail
 
     def initialize(access_token = nil)
       @access_token = access_token || ENV['BENCHMARK_EMAIL_TOKEN']
+      raise EmptyTokenError if  @access_token.empty?
     end
 
     def get_contact_lists
