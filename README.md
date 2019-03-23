@@ -1,4 +1,4 @@
-# BenchmarkEmail
+# BenchmarkEmail [![Gem Version](https://badge.fury.io/rb/benchmark_email.svg)](https://badge.fury.io/rb/benchmark_email)
 
 Ruby client to interact with Benchmark Email API v3. This gem is heavily under construction and supports only limited endpoints of [Benchmark Email API](https://developer.benchmarkemail.com/). Your help is always welcome 😍
 
