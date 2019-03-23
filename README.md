@@ -1,6 +1,6 @@
 # BenchmarkEmail
 
-Ruby client to interact with Benchmark Email API v3.
+Ruby client to interact with Benchmark Email API v3. This gem is heavily under construction and supports only limited endpoints of [Benchmark Email API](https://developer.benchmarkemail.com/). Your help is always welcome 😍
 
 ## Installation
 
@@ -20,10 +20,24 @@ Or install it yourself as:
 
 ## Usage
 
+Before using this gem, you have to [sign up to Benchmark Email](https://ui.benchmarkemail.com/register) and [obtain your API key](https://ui.benchmarkemail.com/Integrate#API).
+
 ```ruby
 require 'benchmark_email'
 client = BenchmarkEmail::Client.new('YOUR_API_KEY')
 puts client.get_contact_lists
+```
+
+Alternatively, you can provide your API key using environment variable:
+
+```sh
+export BENCHMARK_EMAIL_TOKEN='YOUR_API_KEY'
+```
+
+With environment variable being set, you can initialize `BenchmarkEmail::Client` without parameters:
+
+```ruby
+client = BenchmarkEmail::Client.new
 ```
 
 ## Development
