@@ -1,8 +1,6 @@
 # BenchmarkEmail
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/benchmark_email`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Ruby client to interact with Benchmark Email API v3.
 
 ## Installation
 
@@ -22,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'benchmark_email'
+client = BenchmarkEmail::Client.new('YOUR_API_KEY')
+puts client.get_contact_lists
+```
 
 ## Development
 
@@ -32,4 +34,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/benchmark_email.
+Bug reports and pull requests are welcome on GitHub at https://github.com/alea12/benchmark_email.
