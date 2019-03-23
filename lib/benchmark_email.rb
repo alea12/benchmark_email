@@ -11,8 +11,8 @@ module BenchmarkEmail
     attr_accessor :access_token
 
     def initialize(access_token = nil)
-      @access_token = access_token || ENV['BENCHMARK_EMAIL_TOKEN']
-      raise EmptyTokenError if  @access_token.empty?
+      @access_token = access_token || ENV['BENCHMARK_EMAIL_API_TOKEN']
+      raise EmptyTokenError if @access_token.nil? ||  @access_token.empty?
     end
 
     def get_contact_lists

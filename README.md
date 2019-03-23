@@ -20,18 +20,18 @@ Or install it yourself as:
 
 ## Usage
 
-Before using this gem, you have to [sign up to Benchmark Email](https://ui.benchmarkemail.com/register) and [obtain your API key](https://ui.benchmarkemail.com/Integrate#API).
+Before using this gem, you have to [sign up to Benchmark Email](https://ui.benchmarkemail.com/register) and [obtain your API Token](https://ui.benchmarkemail.com/Integrate#API).
 
 ```ruby
 require 'benchmark_email'
-client = BenchmarkEmail::Client.new('YOUR_API_KEY')
+client = BenchmarkEmail::Client.new('YOUR_API_TOKEN')
 puts client.get_contact_lists
 ```
 
-Alternatively, you can provide your API key using environment variable:
+Alternatively, you can provide your API Token using environment variable:
 
 ```sh
-export BENCHMARK_EMAIL_TOKEN='YOUR_API_KEY'
+$ export BENCHMARK_EMAIL_API_TOKEN='YOUR_API_TOKEN'
 ```
 
 With environment variable being set, you can initialize `BenchmarkEmail::Client` without parameters:
