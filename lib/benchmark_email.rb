@@ -10,8 +10,8 @@ module BenchmarkEmail
     API_URL = 'https://clientapi.benchmarkemail.com'
     attr_accessor :access_token
 
-    def initialize(access_token)
-      @access_token = access_token
+    def initialize(access_token = nil)
+      @access_token = access_token || ENV['BENCHMARK_EMAIL_TOKEN']
     end
 
     def get_contact_lists
