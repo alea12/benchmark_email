@@ -1,4 +1,5 @@
 require 'json'
+require 'helper'
 require 'benchmark_email'
 
 RSpec.describe BenchmarkEmail::Client do
