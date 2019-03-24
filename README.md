@@ -1,4 +1,4 @@
-# BenchmarkEmail [![Gem Version](https://badge.fury.io/rb/benchmark_email.svg)](https://badge.fury.io/rb/benchmark_email)
+# BenchmarkEmail [![Gem Version](https://badge.fury.io/rb/benchmark_email.svg)](https://badge.fury.io/rb/benchmark_email) [![Build Status](https://travis-ci.org/alea12/benchmark_email.svg?branch=master)](https://travis-ci.org/alea12/benchmark_email) [![Coverage Status](https://coveralls.io/repos/github/alea12/benchmark_email/badge.svg?branch=master)](https://coveralls.io/github/alea12/benchmark_email?branch=master)
 
 Ruby client to interact with Benchmark Email API v3. This gem is heavily under construction and supports only limited endpoints of [Benchmark Email API](https://developer.benchmarkemail.com/). Your help is always welcome 😍
 
